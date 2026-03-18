@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # VAPT Automation Tool
 
 A professional, modular, and scalable Vulnerability Assessment and Penetration Testing (VAPT) automation tool built with Python and Flask.
@@ -59,3 +60,7 @@ vapt_tool/
 ## Security Warning
 
 This tool is for **educational and ethical security testing purposes only**. Never use it against targets you do not have explicit permission to test.
+=======
+# VAPT-Tool
+A Vapt Tool for Testing the software through Automation
+>>>>>>> 7ed224233a07ca83dcb6843e2278e57795fa29c5
