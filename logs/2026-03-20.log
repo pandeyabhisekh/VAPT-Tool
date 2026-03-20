@@ -1,0 +1,113 @@
+2026-03-20 12:16:15,361 - vapt_tool - INFO - Received scan request for http://localhost:8081
+2026-03-20 12:16:15,362 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081
+2026-03-20 12:16:15,367 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 12:16:15,369 - vapt_tool - INFO - Starting crawl of http://localhost:8081
+2026-03-20 12:16:17,675 - vapt_tool - INFO - Crawl completed. Found 2 internal links.
+2026-03-20 12:16:17,678 - vapt_tool - INFO - Scanning URL: http://localhost:8081#
+2026-03-20 12:16:17,679 - vapt_tool - INFO - Scanning URL: http://localhost:8081
+2026-03-20 12:16:20,879 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 26
+2026-03-20 12:16:20,881 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-16-20.json
+2026-03-20 12:16:20,889 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-16-20.html
+2026-03-20 12:17:02,942 - vapt_tool - INFO - Received scan request for http://localhost:8081
+2026-03-20 12:17:02,943 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081
+2026-03-20 12:17:02,947 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 12:17:02,949 - vapt_tool - INFO - Starting crawl of http://localhost:8081
+2026-03-20 12:17:03,083 - vapt_tool - INFO - Crawl completed. Found 2 internal links.
+2026-03-20 12:17:03,084 - vapt_tool - INFO - Scanning URL: http://localhost:8081#
+2026-03-20 12:17:03,084 - vapt_tool - INFO - Scanning URL: http://localhost:8081
+2026-03-20 12:17:05,669 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 26
+2026-03-20 12:17:05,672 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-17-05.json
+2026-03-20 12:17:05,678 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-17-05.html
+2026-03-20 12:31:00,241 - vapt_tool - INFO - Received scan request for http://localhost:8081
+2026-03-20 12:31:00,242 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081
+2026-03-20 12:31:00,246 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed or permission denied): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 12:31:00,247 - vapt_tool - INFO - Starting advanced crawler for http://localhost:8081 (Max Depth: 3)
+2026-03-20 12:31:00,421 - vapt_tool - INFO - Crawl completed. Found 1 internal links and 16 interactive elements.
+2026-03-20 12:31:00,423 - vapt_tool - INFO - Scanning URL: http://localhost:8081
+2026-03-20 12:31:01,544 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 29
+2026-03-20 12:31:01,548 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-31-01.json
+2026-03-20 12:31:01,568 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-31-01.html
+2026-03-20 12:37:55,852 - vapt_tool - INFO - Received scan request for http://localhost:8081
+2026-03-20 12:37:55,854 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081
+2026-03-20 12:37:55,854 - vapt_tool - INFO - Credentials provided. Attempting to discover login form...
+2026-03-20 12:37:56,032 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed or permission denied): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 12:37:56,034 - vapt_tool - INFO - Starting advanced crawler for http://localhost:8081 (Max Depth: 3)
+2026-03-20 12:37:56,099 - vapt_tool - INFO - Crawl completed. Found 1 internal links and 16 interactive elements.
+2026-03-20 12:37:56,101 - vapt_tool - INFO - Scanning URL: http://localhost:8081
+2026-03-20 12:37:57,135 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 15
+2026-03-20 12:37:57,138 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-37-57.json
+2026-03-20 12:37:57,156 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-37-57.html
+2026-03-20 12:38:17,852 - vapt_tool - INFO - Received scan request for http://localhost:8081
+2026-03-20 12:38:17,853 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081
+2026-03-20 12:38:17,853 - vapt_tool - INFO - Credentials provided. Attempting to discover login form...
+2026-03-20 12:38:17,996 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed or permission denied): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 12:38:17,997 - vapt_tool - INFO - Starting advanced crawler for http://localhost:8081 (Max Depth: 3)
+2026-03-20 12:38:18,073 - vapt_tool - INFO - Crawl completed. Found 1 internal links and 16 interactive elements.
+2026-03-20 12:38:18,074 - vapt_tool - INFO - Scanning URL: http://localhost:8081
+2026-03-20 12:38:19,143 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 15
+2026-03-20 12:38:19,145 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-38-19.json
+2026-03-20 12:38:19,160 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-38-19.html
+2026-03-20 12:46:59,738 - vapt_tool - INFO - Received scan request for http://localhost:8081
+2026-03-20 12:46:59,739 - vapt_tool - INFO - Starting Professional VAPT Lifecycle for http://localhost:8081
+2026-03-20 12:46:59,739 - vapt_tool - INFO - [Phase 1] Running Reconnaissance...
+2026-03-20 12:46:59,745 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed or permission denied): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 12:46:59,747 - vapt_tool - INFO - [Phase 2] Handling Authentication and Brute-Force Testing...
+2026-03-20 12:46:59,882 - vapt_tool - INFO - Starting Brute-Force and Rate-Limit test on http://localhost:8081/
+2026-03-20 12:47:01,558 - vapt_tool - INFO - Authentication successful for user 'DEMO12'.
+2026-03-20 12:47:01,559 - vapt_tool - INFO - [Phase 3] Starting Crawling and Endpoint Discovery...
+2026-03-20 12:47:01,560 - vapt_tool - INFO - Starting advanced crawler for http://localhost:8081 (Max Depth: 3)
+2026-03-20 12:47:01,632 - vapt_tool - INFO - Crawl completed. Found 1 internal links and 16 interactive elements.
+2026-03-20 12:47:01,633 - vapt_tool - INFO - [Phase 4] Running Vulnerability Scans on 1 discovered links...
+2026-03-20 12:47:01,636 - vapt_tool - INFO - Scanning URL: http://localhost:8081
+2026-03-20 12:47:02,707 - vapt_tool - INFO - Scan completed. Total findings: 16
+2026-03-20 12:47:02,710 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-47-02.json
+2026-03-20 12:47:02,727 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_12-47-02.html
+2026-03-20 13:00:27,370 - vapt_tool - INFO - Received scan request for http://localhost:8081
+2026-03-20 13:00:27,371 - vapt_tool - INFO - Starting Professional VAPT Lifecycle for http://localhost:8081
+2026-03-20 13:00:27,372 - vapt_tool - INFO - [Phase 1] Running Reconnaissance...
+2026-03-20 13:00:27,376 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed or permission denied): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 13:00:27,380 - vapt_tool - INFO - [Phase 2] Handling Authentication and Brute-Force Testing...
+2026-03-20 13:00:27,512 - vapt_tool - INFO - Testing login form for rate limiting/brute-force: http://localhost:8081/
+2026-03-20 13:00:28,058 - vapt_tool - INFO - Authentication successful for user 'DEMO12'.
+2026-03-20 13:00:28,059 - vapt_tool - INFO - [Phase 3] Starting Crawling and Endpoint Discovery...
+2026-03-20 13:00:28,059 - vapt_tool - INFO - Starting professional authenticated crawler for http://localhost:8081
+2026-03-20 13:00:28,059 - vapt_tool - INFO - Crawling: http://localhost:8081 (Depth: 0)
+2026-03-20 13:00:28,133 - vapt_tool - INFO - Discovery complete: 1 routes, 1 elements.
+2026-03-20 13:00:28,134 - vapt_tool - INFO - [Phase 4] Running Vulnerability Scans on 1 discovered links...
+2026-03-20 13:00:28,137 - vapt_tool - INFO - Scanning URL: http://localhost:8081
+2026-03-20 13:00:29,325 - vapt_tool - INFO - Scan completed. Total findings: 15
+2026-03-20 13:00:29,328 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_13-00-29.json
+2026-03-20 13:00:29,355 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_13-00-29.html
+2026-03-20 13:18:58,781 - vapt_tool - INFO - Received scan request for http://localhost:8081
+2026-03-20 13:18:58,782 - vapt_tool - INFO - Starting Professional VAPT Lifecycle for http://localhost:8081
+2026-03-20 13:18:58,782 - vapt_tool - INFO - [Phase 1] Running Reconnaissance...
+2026-03-20 13:18:58,788 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed or permission denied): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 13:18:58,790 - vapt_tool - INFO - [Phase 2] Handling Authentication and Brute-Force Testing...
+2026-03-20 13:18:58,911 - vapt_tool - INFO - Testing login form for rate limiting/brute-force: http://localhost:8081/
+2026-03-20 13:18:59,399 - vapt_tool - INFO - Authentication successful for user 'DEMO12'.
+2026-03-20 13:18:59,399 - vapt_tool - INFO - [Phase 3] Starting Crawling and Endpoint Discovery...
+2026-03-20 13:18:59,400 - vapt_tool - INFO - Starting professional authenticated crawler for http://localhost:8081
+2026-03-20 13:18:59,400 - vapt_tool - INFO - Crawling: http://localhost:8081 (Depth: 0)
+2026-03-20 13:18:59,473 - vapt_tool - INFO - Discovery complete: 1 routes, 1 elements.
+2026-03-20 13:18:59,473 - vapt_tool - INFO - [Phase 4] Running Vulnerability Scans on 1 discovered links...
+2026-03-20 13:18:59,476 - vapt_tool - INFO - Scanning URL: http://localhost:8081
+2026-03-20 13:19:00,756 - vapt_tool - INFO - Scan completed. Total findings: 15
+2026-03-20 13:19:00,758 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_13-19-00.json
+2026-03-20 13:19:00,777 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_13-19-00.html
+2026-03-20 14:33:41,925 - vapt_tool - INFO - Received scan request for http://localhost:8081/login
+2026-03-20 14:33:41,927 - vapt_tool - INFO - Starting Professional VAPT Lifecycle for http://localhost:8081/login
+2026-03-20 14:33:41,927 - vapt_tool - INFO - [Phase 1] Running Reconnaissance...
+2026-03-20 14:33:41,933 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed or permission denied): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 14:33:41,934 - vapt_tool - INFO - [Phase 2] Handling Authentication and Brute-Force Testing...
+2026-03-20 14:33:42,022 - vapt_tool - INFO - Analyzing login form for advanced security controls: http://localhost:8081/login
+2026-03-20 14:33:42,090 - vapt_tool - INFO - Advanced CAPTCHA detected (Advanced Dynamic CAPTCHA (GUID Tokenized)). Marking as 'Protected against automation' and skipping brute-force.
+2026-03-20 14:33:42,091 - vapt_tool - INFO - Skipping automated login due to CAPTCHA.
+2026-03-20 14:33:42,092 - vapt_tool - INFO - [Phase 3] Starting Crawling and Endpoint Discovery...
+2026-03-20 14:33:42,092 - vapt_tool - INFO - Starting professional authenticated crawler for http://localhost:8081/login
+2026-03-20 14:33:42,092 - vapt_tool - INFO - Crawling: http://localhost:8081/login (Depth: 0)
+2026-03-20 14:33:42,166 - vapt_tool - INFO - Discovery complete: 1 routes, 1 elements.
+2026-03-20 14:33:42,167 - vapt_tool - INFO - [Phase 4] Running Vulnerability Scans on 1 discovered links...
+2026-03-20 14:33:42,169 - vapt_tool - INFO - Scanning URL: http://localhost:8081/login
+2026-03-20 14:33:43,321 - vapt_tool - INFO - Scan completed. Total findings: 16
+2026-03-20 14:33:43,324 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_14-33-43.json
+2026-03-20 14:33:43,344 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_14-33-43.html

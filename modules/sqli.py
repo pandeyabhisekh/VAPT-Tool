@@ -1,66 +1,42 @@
 from config import config
 from utils.helpers import extract_forms
+import requests
+import urllib.parse
 
 def scan(url, session=None):
     results = []
     try:
-        if session:
-            response = session.get(url, timeout=10)
-        else:
-            import requests
-            response = requests.get(url, timeout=10)
-            
+        response = (session or requests).get(url, timeout=10)
         forms = extract_forms(response.text)
         
-        # SQL Injection patterns in error messages
-        sqli_errors = [
-            "you have an error in your sql syntax",
-            "unclosed quotation mark after the character string",
-            "mysql_fetch_array()",
-            "supplied argument is not a valid mysql result resource",
-            "invalid query",
-            "microsoft ole db provider for sql server"
-        ]
+        sqli_errors = ["mysql_fetch", "syntax error", "sql error", "oracle error", "postgresql error"]
         
         for form in forms:
-            action = form.get('action')
+            action = form.get('action') or ''
             method = form.get('method', 'get').lower()
-            inputs = form.find_all('input')
+            inputs = form.find_all(['input', 'textarea', 'select'])
+            form_url = urllib.parse.urljoin(url, action)
             
             for payload in config.SQLI_PAYLOADS:
-                data = {}
-                for input_tag in inputs:
-                    name = input_tag.get('name')
-                    if name:
-                        data[name] = payload
-                
-                import urllib.parse
-                form_url = urllib.parse.urljoin(url, action)
-                
-                if method == 'post':
-                    if session:
-                        resp = session.post(form_url, data=data, timeout=10)
-                    else:
-                        resp = requests.post(form_url, data=data, timeout=10)
-                else:
-                    if session:
-                        resp = session.get(form_url, params=data, timeout=10)
-                    else:
-                        resp = requests.get(form_url, params=data, timeout=10)
-                
-                if resp:
-                    for error in sqli_errors:
-                        if error.lower() in resp.text.lower():
-                            results.append({
-                                'name': 'SQL Injection Detected',
-                                'severity': 'Critical',
-                                'description': f"Potential SQL Injection vulnerability in form at {form_url}",
-                                'poc': f"Form submission with payload {payload} resulted in SQL error: {error}",
-                                'recommendation': "Use prepared statements and parameterized queries."
-                            })
-                            return results # One payload is enough
-                            
-    except Exception as e:
-        pass
-        
+                data = {inp.get('name'): payload for inp in inputs if inp.get('name')}
+                if not data: continue
+
+                try:
+                    resp = (session or requests).post(form_url, data=data, timeout=10) if method == 'post' else (session or requests).get(form_url, params=data, timeout=10)
+                    
+                    if resp and any(err in resp.text.lower() for err in sqli_errors):
+                        results.append({
+                            'name': 'SQL Injection Detected',
+                            'severity': 'Critical',
+                            'url': form_url,
+                            'description': "The application appears to be vulnerable to SQL injection, as evidenced by database error messages in the response.",
+                            'impact': "Full database compromise, including theft of sensitive user data, credentials, and potential remote code execution.",
+                            'steps_to_reproduce': f"1. Submit payload '{payload}' in a form field on {form_url}.\n2. Observe an SQL error message in the server's response.",
+                            'proof_of_concept': f"The application returned a database error after injecting the payload '{payload}', indicating improper handling of user-supplied input.",
+                            'recommendation': "Use parameterized queries (prepared statements) for all database operations to ensure user input is treated as data, not code.",
+                            'technical_fix': "Use ORMs (like SQLAlchemy) or prepared statements: cursor.execute('SELECT * FROM users WHERE id = %s', (user_id,))"
+                        })
+                        return results # Confirmation found
+                except: continue
+    except: pass
     return results

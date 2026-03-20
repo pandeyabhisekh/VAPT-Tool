@@ -153,3 +153,151 @@
 2026-03-18 16:25:46,862 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 1
 2026-03-18 16:25:46,870 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-25-46.json
 2026-03-18 16:25:46,883 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-25-46.html
+2026-03-18 16:37:31,114 - vapt_tool - INFO - Received scan request for http://localhost:8081/Dashboard
+2026-03-18 16:37:31,115 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081/Dashboard
+2026-03-18 16:37:31,125 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-18 16:37:31,130 - vapt_tool - INFO - Starting crawl of http://localhost:8081/Dashboard
+2026-03-18 16:37:31,217 - vapt_tool - INFO - Crawl completed. Found 1 internal links.
+2026-03-18 16:37:31,221 - vapt_tool - INFO - Scanning URL: http://localhost:8081/Dashboard
+2026-03-18 16:37:33,037 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 13
+2026-03-18 16:37:33,042 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-37-33.json
+2026-03-18 16:37:33,061 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-37-33.html
+2026-03-18 16:37:48,061 - vapt_tool - INFO - Received scan request for http://localhost:8081/Dashboard/admin
+2026-03-18 16:37:48,062 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081/Dashboard/admin
+2026-03-18 16:37:48,069 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-18 16:37:48,072 - vapt_tool - INFO - Starting crawl of http://localhost:8081/Dashboard/admin
+2026-03-18 16:37:48,427 - vapt_tool - INFO - Crawl completed. Found 3 internal links.
+2026-03-18 16:37:48,429 - vapt_tool - INFO - Scanning URL: http://localhost:8081/Login.aspx#
+2026-03-18 16:37:48,429 - vapt_tool - INFO - Scanning URL: http://localhost:8081/Dashboard/admin
+2026-03-18 16:37:48,431 - vapt_tool - INFO - Scanning URL: http://localhost:8081/Login.aspx
+2026-03-18 16:37:56,274 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 39
+2026-03-18 16:37:56,281 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-37-56.json
+2026-03-18 16:37:56,297 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-37-56.html
+2026-03-18 16:49:37,596 - vapt_tool - INFO - Received scan request for http://192.168.0.26:5000
+2026-03-18 16:49:37,596 - vapt_tool - INFO - Starting full VAPT scan on http://192.168.0.26:5000
+2026-03-18 16:49:37,601 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-18 16:49:37,603 - vapt_tool - INFO - Starting crawl of http://192.168.0.26:5000
+2026-03-18 16:49:37,612 - vapt_tool - INFO - Crawl completed. Found 1 internal links.
+2026-03-18 16:49:37,613 - vapt_tool - INFO - Scanning URL: http://192.168.0.26:5000
+2026-03-18 16:49:37,664 - vapt_tool - INFO - Received scan request for <script>alert('XSS')</script>
+2026-03-18 16:49:37,665 - vapt_tool - INFO - Starting full VAPT scan on <script>alert('XSS')</script>
+2026-03-18 16:49:37,665 - vapt_tool - INFO - Starting crawl of <script>alert('XSS')</script>
+2026-03-18 16:49:37,666 - vapt_tool - ERROR - Error crawling <script>alert('XSS')</script>: Invalid URL "<script>alert('XSS')</script>": No scheme supplied. Perhaps you meant https://<script>alert('XSS')</script>?
+2026-03-18 16:49:37,666 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 16:49:37,666 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 16:49:37,668 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,674 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 16:49:37,681 - vapt_tool - INFO - Received scan request for <img src=x onerror=alert('XSS')>
+2026-03-18 16:49:37,681 - vapt_tool - INFO - Starting full VAPT scan on <img src=x onerror=alert('XSS')>
+2026-03-18 16:49:37,682 - vapt_tool - INFO - Starting crawl of <img src=x onerror=alert('XSS')>
+2026-03-18 16:49:37,682 - vapt_tool - ERROR - Error crawling <img src=x onerror=alert('XSS')>: Invalid URL "<img src=x onerror=alert('XSS')>": No scheme supplied. Perhaps you meant https://<img src=x onerror=alert('XSS')>?
+2026-03-18 16:49:37,683 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 16:49:37,683 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 16:49:37,684 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,690 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 16:49:37,696 - vapt_tool - INFO - Received scan request for javascript:alert('XSS')
+2026-03-18 16:49:37,697 - vapt_tool - INFO - Starting full VAPT scan on javascript:alert('XSS')
+2026-03-18 16:49:37,697 - vapt_tool - INFO - Starting crawl of javascript:alert('XSS')
+2026-03-18 16:49:37,698 - vapt_tool - ERROR - Error crawling javascript:alert('XSS'): No connection adapters were found for "javascript:alert('XSS')"
+2026-03-18 16:49:37,698 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 16:49:37,699 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 16:49:37,700 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,706 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 16:49:37,712 - vapt_tool - INFO - Received scan request for '"><script>alert(1)</script>
+2026-03-18 16:49:37,713 - vapt_tool - INFO - Starting full VAPT scan on '"><script>alert(1)</script>
+2026-03-18 16:49:37,713 - vapt_tool - INFO - Starting crawl of '"><script>alert(1)</script>
+2026-03-18 16:49:37,714 - vapt_tool - ERROR - Error crawling '"><script>alert(1)</script>: Invalid URL '\'"><script>alert(1)</script>': No scheme supplied. Perhaps you meant https://'"><script>alert(1)</script>?
+2026-03-18 16:49:37,714 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 16:49:37,715 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 16:49:37,716 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,722 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 16:49:37,736 - vapt_tool - INFO - Received scan request for ' OR '1'='1
+2026-03-18 16:49:37,737 - vapt_tool - INFO - Starting full VAPT scan on ' OR '1'='1
+2026-03-18 16:49:37,737 - vapt_tool - INFO - Starting crawl of ' OR '1'='1
+2026-03-18 16:49:37,738 - vapt_tool - ERROR - Error crawling ' OR '1'='1: Invalid URL "' OR '1'='1": No scheme supplied. Perhaps you meant https://' OR '1'='1?
+2026-03-18 16:49:37,738 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 16:49:37,738 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 16:49:37,739 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,746 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 16:49:37,750 - vapt_tool - INFO - Received scan request for " OR "1"="1
+2026-03-18 16:49:37,752 - vapt_tool - INFO - Starting full VAPT scan on " OR "1"="1
+2026-03-18 16:49:37,752 - vapt_tool - INFO - Starting crawl of " OR "1"="1
+2026-03-18 16:49:37,753 - vapt_tool - ERROR - Error crawling " OR "1"="1: Invalid URL '" OR "1"="1': No scheme supplied. Perhaps you meant https://" OR "1"="1?
+2026-03-18 16:49:37,753 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 16:49:37,754 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 16:49:37,755 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,760 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 16:49:37,767 - vapt_tool - INFO - Received scan request for ' OR 1=1 --
+2026-03-18 16:49:37,767 - vapt_tool - INFO - Starting full VAPT scan on ' OR 1=1 --
+2026-03-18 16:49:37,767 - vapt_tool - INFO - Starting crawl of ' OR 1=1 --
+2026-03-18 16:49:37,768 - vapt_tool - ERROR - Error crawling ' OR 1=1 --: Invalid URL "' OR 1=1 --": No scheme supplied. Perhaps you meant https://' OR 1=1 --?
+2026-03-18 16:49:37,769 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 16:49:37,769 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 16:49:37,770 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,776 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 16:49:37,783 - vapt_tool - INFO - Received scan request for admin' --
+2026-03-18 16:49:37,783 - vapt_tool - INFO - Starting full VAPT scan on admin' --
+2026-03-18 16:49:37,783 - vapt_tool - INFO - Starting crawl of admin' --
+2026-03-18 16:49:37,784 - vapt_tool - ERROR - Error crawling admin' --: Invalid URL "admin' --": No scheme supplied. Perhaps you meant https://admin' --?
+2026-03-18 16:49:37,784 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 16:49:37,785 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 16:49:37,786 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,792 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 16:49:37,798 - vapt_tool - INFO - Received scan request for ' UNION SELECT NULL,NULL,NULL--
+2026-03-18 16:49:37,799 - vapt_tool - INFO - Starting full VAPT scan on ' UNION SELECT NULL,NULL,NULL--
+2026-03-18 16:49:37,799 - vapt_tool - INFO - Starting crawl of ' UNION SELECT NULL,NULL,NULL--
+2026-03-18 16:49:37,800 - vapt_tool - ERROR - Error crawling ' UNION SELECT NULL,NULL,NULL--: Invalid URL "' UNION SELECT NULL,NULL,NULL--": No scheme supplied. Perhaps you meant https://' UNION SELECT NULL,NULL,NULL--?
+2026-03-18 16:49:37,800 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 16:49:37,801 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 16:49:37,802 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,807 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 16:49:37,870 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 1
+2026-03-18 16:49:37,873 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.json
+2026-03-18 16:49:37,879 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_16-49-37.html
+2026-03-18 17:45:36,726 - vapt_tool - INFO - Received scan request for https://192.168.0.200/DashboardM
+2026-03-18 17:45:36,727 - vapt_tool - INFO - Starting full VAPT scan on https://192.168.0.200/DashboardM
+2026-03-18 17:45:36,732 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-18 17:45:36,734 - vapt_tool - INFO - Starting crawl of https://192.168.0.200/DashboardM
+2026-03-18 17:45:37,637 - vapt_tool - ERROR - Error crawling https://192.168.0.200/DashboardM: HTTPSConnectionPool(host='192.168.0.200', port=443): Max retries exceeded with url: /DashboardM (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)')))
+2026-03-18 17:45:37,652 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-18 17:45:37,655 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-18 17:45:37,666 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_17-45-37.json
+2026-03-18 17:45:37,690 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_17-45-37.html
+2026-03-18 17:45:45,017 - vapt_tool - INFO - Received scan request for http://localhost:8081/Login.aspx
+2026-03-18 17:45:45,017 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081/Login.aspx
+2026-03-18 17:45:45,021 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-18 17:45:45,023 - vapt_tool - INFO - Starting crawl of http://localhost:8081/Login.aspx
+2026-03-18 17:45:47,936 - vapt_tool - INFO - Crawl completed. Found 2 internal links.
+2026-03-18 17:45:47,938 - vapt_tool - INFO - Scanning URL: http://localhost:8081/Login.aspx#
+2026-03-18 17:45:47,938 - vapt_tool - INFO - Scanning URL: http://localhost:8081/Login.aspx
+2026-03-18 17:45:51,070 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 26
+2026-03-18 17:45:51,072 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_17-45-51.json
+2026-03-18 17:45:51,080 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-18_17-45-51.html
+2026-03-20 10:31:37,769 - vapt_tool - INFO - Received scan request for http://localhost:8081/Dashboard
+2026-03-20 10:31:37,770 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081/Dashboard
+2026-03-20 10:31:37,774 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 10:31:37,776 - vapt_tool - INFO - Starting crawl of http://localhost:8081/Dashboard
+2026-03-20 10:31:40,238 - vapt_tool - INFO - Crawl completed. Found 1 internal links.
+2026-03-20 10:31:40,239 - vapt_tool - INFO - Scanning URL: http://localhost:8081/Dashboard
+2026-03-20 10:31:41,969 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 13
+2026-03-20 10:31:41,972 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_10-31-41.json
+2026-03-20 10:31:41,981 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_10-31-41.html
+2026-03-20 10:53:22,399 - vapt_tool - INFO - Received scan request for https://support.notiva.in/technician/tickets/184/
+2026-03-20 10:53:22,400 - vapt_tool - INFO - Starting full VAPT scan on https://support.notiva.in/technician/tickets/184/
+2026-03-20 10:53:22,405 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 10:53:22,407 - vapt_tool - INFO - Starting crawl of https://support.notiva.in/technician/tickets/184/
+2026-03-20 10:53:22,922 - vapt_tool - ERROR - Error crawling https://support.notiva.in/technician/tickets/184/: HTTPSConnectionPool(host='support.notiva.in', port=443): Max retries exceeded with url: /technician/tickets/184/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))
+2026-03-20 10:53:22,922 - vapt_tool - INFO - Crawl completed. Found 0 internal links.
+2026-03-20 10:53:22,923 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 0
+2026-03-20 10:53:22,924 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_10-53-22.json
+2026-03-20 10:53:22,995 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_10-53-22.html
+2026-03-20 10:53:38,939 - vapt_tool - INFO - Received scan request for http://localhost:8081
+2026-03-20 10:53:38,940 - vapt_tool - INFO - Starting full VAPT scan on http://localhost:8081
+2026-03-20 10:53:38,944 - vapt_tool - WARNING - Nmap scan failed (Nmap might not be installed): 'nmap program was not found in path. PATH is : C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code;C:\\Program Files\\IBM\\MQ\\java\\lib;C:\\Program Files\\IBM\\MQ\\java\\lib64;D:\\oracle\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\IBM\\MQ\\bin64;C:\\Program Files\\IBM\\MQ\\bin;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin64;C:\\Program Files\\IBM\\MQ\\tools\\c\\samples\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\downloads\\Git\\cmd;C:\\Users\\Admin\\.cargo\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\Programs\\Ollama'
+2026-03-20 10:53:38,945 - vapt_tool - INFO - Starting crawl of http://localhost:8081
+2026-03-20 10:53:39,351 - vapt_tool - INFO - Crawl completed. Found 2 internal links.
+2026-03-20 10:53:39,352 - vapt_tool - INFO - Scanning URL: http://localhost:8081
+2026-03-20 10:53:39,353 - vapt_tool - INFO - Scanning URL: http://localhost:8081#
+2026-03-20 10:53:41,913 - vapt_tool - INFO - Scan completed. Total vulnerabilities found: 26
+2026-03-20 10:53:41,916 - vapt_tool - INFO - JSON report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_10-53-41.json
+2026-03-20 10:53:41,924 - vapt_tool - INFO - HTML report generated: C:\Users\Admin\Desktop\vapt_tool\reports\vapt_report_2026-03-20_10-53-41.html

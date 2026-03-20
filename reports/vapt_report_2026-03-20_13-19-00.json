@@ -1,0 +1,170 @@
+{
+    "target": "http://localhost:8081",
+    "timestamp": "2026-03-20_13-19-00",
+    "vulnerabilities_count": 15,
+    "vulnerabilities": [
+        {
+            "name": "Missing Rate-Limiting on Login Endpoint",
+            "severity": "Medium",
+            "url": "http://localhost:8081/",
+            "description": "The application does not enforce rate limiting on the login endpoint, allowing rapid automated attempts.",
+            "impact": "Attackers can perform high-speed brute-force and credential stuffing attacks to compromise user accounts.",
+            "steps_to_reproduce": "1. Send 5 POST requests to http://localhost:8081/ in < 1 second.\n2. Observe no blocking or delays.",
+            "proof_of_concept": "5 requests completed in 0.43 seconds.",
+            "recommendation": "Implement rate limiting (e.g., 5 requests per minute per IP) and add CAPTCHA after 3 failed attempts.",
+            "technical_fix": "Nginx: limit_req_zone $binary_remote_addr zone=login:10m rate=5r/m;\nApplication: Use libraries like 'Flask-Limiter'."
+        },
+        {
+            "name": "Authentication Successful",
+            "severity": "Info",
+            "url": "http://localhost:8081/",
+            "description": "Successfully authenticated as user 'DEMO12'. The scanner will now proceed with an authenticated session.",
+            "impact": "Authenticated scanning provides deeper coverage.",
+            "poc": "Login to http://localhost:8081/ was successful.",
+            "recommendation": "Informational finding."
+        },
+        {
+            "name": "Missing Security Header: Permissions-Policy",
+            "severity": "Low",
+            "url": "http://localhost:8081",
+            "description": "The security-enhancing header 'Permissions-Policy' is not present in the HTTP response.",
+            "impact": "Attackers can exploit the lack of browser-side security controls to perform XSS, clickjacking, or data leakage.",
+            "steps_to_reproduce": "1. Send a GET request to http://localhost:8081.\n2. Inspect headers in the response.",
+            "poc": "Header 'Permissions-Policy' missing from response at http://localhost:8081",
+            "recommendation": "Define a Permissions-Policy to restrict browser features like camera or geolocation.",
+            "technical_fix": "In Nginx: add_header Permissions-Policy 'value';\nIn Flask: response.headers['Permissions-Policy'] = 'value'"
+        },
+        {
+            "name": "Exposed Administrative Panel",
+            "severity": "Medium",
+            "url": "http://localhost:8081/admin",
+            "description": "An administrative login or dashboard was discovered at a common path.",
+            "impact": "Provides a direct target for brute-force attacks and unauthorized administrative access if weak credentials are used.",
+            "steps_to_reproduce": "1. Navigate to http://localhost:8081/admin.\n2. Observe the administrative login interface.",
+            "proof_of_concept": "Found login form at http://localhost:8081/admin",
+            "recommendation": "Restrict access to the admin panel using IP whitelisting or a VPN. Change the default /admin path to a non-obvious URL.",
+            "technical_fix": "Nginx: allow 192.168.1.0/24; deny all; inside the admin location block."
+        },
+        {
+            "name": "Interesting Path Discovered: /login",
+            "severity": "Low",
+            "url": "http://localhost:8081/login",
+            "description": "A resource was found at /login which may contain sensitive information or internal logic.",
+            "impact": "Information disclosure that assists in further reconnaissance.",
+            "steps_to_reproduce": "1. Request http://localhost:8081/login.\n2. Inspect the content for internal details.",
+            "proof_of_concept": "Path http://localhost:8081/login exists (HTTP 200)",
+            "recommendation": "Review the necessity of this path being public. If not required, disable access or require authentication.",
+            "technical_fix": "Options -Indexes in Apache or autoindex off in Nginx to prevent directory listing."
+        },
+        {
+            "name": "Interesting Path Discovered: /config",
+            "severity": "Low",
+            "url": "http://localhost:8081/config",
+            "description": "A resource was found at /config which may contain sensitive information or internal logic.",
+            "impact": "Information disclosure that assists in further reconnaissance.",
+            "steps_to_reproduce": "1. Request http://localhost:8081/config.\n2. Inspect the content for internal details.",
+            "proof_of_concept": "Path http://localhost:8081/config exists (HTTP 302)",
+            "recommendation": "Review the necessity of this path being public. If not required, disable access or require authentication.",
+            "technical_fix": "Options -Indexes in Apache or autoindex off in Nginx to prevent directory listing."
+        },
+        {
+            "name": "Interesting Path Discovered: /backup",
+            "severity": "Low",
+            "url": "http://localhost:8081/backup",
+            "description": "A resource was found at /backup which may contain sensitive information or internal logic.",
+            "impact": "Information disclosure that assists in further reconnaissance.",
+            "steps_to_reproduce": "1. Request http://localhost:8081/backup.\n2. Inspect the content for internal details.",
+            "proof_of_concept": "Path http://localhost:8081/backup exists (HTTP 302)",
+            "recommendation": "Review the necessity of this path being public. If not required, disable access or require authentication.",
+            "technical_fix": "Options -Indexes in Apache or autoindex off in Nginx to prevent directory listing."
+        },
+        {
+            "name": "Exposed Git Repository",
+            "severity": "High",
+            "url": "http://localhost:8081/.git",
+            "description": "The .git directory is accessible, allowing attackers to download the entire source code history and internal configurations.",
+            "impact": "Source code theft, exposure of hardcoded secrets, and full reverse engineering of the application logic.",
+            "steps_to_reproduce": "1. Access http://localhost:8081/.git/config or http://localhost:8081/.git/index in a browser.\n2. Use 'git-dumper' to pull the full repository.",
+            "proof_of_concept": "Exposed git directory found at http://localhost:8081/.git (HTTP 302)",
+            "recommendation": "Block access to the .git directory immediately and clean any leaked secrets from the repository history before redeploying.",
+            "technical_fix": "Nginx: location ~ /\\.git { deny all; }\nApache: <Directory ~ \"/\\.git\"> Order allow,deny Deny from all </Directory>"
+        },
+        {
+            "name": "Exposed Environment File (.env)",
+            "severity": "Critical",
+            "url": "http://localhost:8081/.env",
+            "description": "The .env file containing sensitive environment variables like DB credentials and API keys is publicly accessible.",
+            "impact": "Immediate full system compromise. Attackers can access databases, third-party services, and cloud infrastructure.",
+            "steps_to_reproduce": "1. Send a GET request to http://localhost:8081/.env.\n2. Read sensitive keys like DB_PASSWORD or AWS_SECRET.",
+            "proof_of_concept": "Successfully accessed http://localhost:8081/.env with content length 166",
+            "recommendation": "Move the .env file outside of the web root and rotate all secrets contained within it immediately.",
+            "technical_fix": "Move .env to a parent directory not served by the web server. Use environment variables injected by the OS or Docker instead of a file."
+        },
+        {
+            "name": "Interesting Path Discovered: /phpinfo.php",
+            "severity": "Low",
+            "url": "http://localhost:8081/phpinfo.php",
+            "description": "A resource was found at /phpinfo.php which may contain sensitive information or internal logic.",
+            "impact": "Information disclosure that assists in further reconnaissance.",
+            "steps_to_reproduce": "1. Request http://localhost:8081/phpinfo.php.\n2. Inspect the content for internal details.",
+            "proof_of_concept": "Path http://localhost:8081/phpinfo.php exists (HTTP 302)",
+            "recommendation": "Review the necessity of this path being public. If not required, disable access or require authentication.",
+            "technical_fix": "Options -Indexes in Apache or autoindex off in Nginx to prevent directory listing."
+        },
+        {
+            "name": "Interesting Path Discovered: /robots.txt",
+            "severity": "Low",
+            "url": "http://localhost:8081/robots.txt",
+            "description": "A resource was found at /robots.txt which may contain sensitive information or internal logic.",
+            "impact": "Information disclosure that assists in further reconnaissance.",
+            "steps_to_reproduce": "1. Request http://localhost:8081/robots.txt.\n2. Inspect the content for internal details.",
+            "proof_of_concept": "Path http://localhost:8081/robots.txt exists (HTTP 302)",
+            "recommendation": "Review the necessity of this path being public. If not required, disable access or require authentication.",
+            "technical_fix": "Options -Indexes in Apache or autoindex off in Nginx to prevent directory listing."
+        },
+        {
+            "name": "Exposed Administrative Panel",
+            "severity": "Medium",
+            "url": "http://localhost:8081/wp-admin",
+            "description": "An administrative login or dashboard was discovered at a common path.",
+            "impact": "Provides a direct target for brute-force attacks and unauthorized administrative access if weak credentials are used.",
+            "steps_to_reproduce": "1. Navigate to http://localhost:8081/wp-admin.\n2. Observe the administrative login interface.",
+            "proof_of_concept": "Found login form at http://localhost:8081/wp-admin",
+            "recommendation": "Restrict access to the admin panel using IP whitelisting or a VPN. Change the default /admin path to a non-obvious URL.",
+            "technical_fix": "Nginx: allow 192.168.1.0/24; deny all; inside the admin location block."
+        },
+        {
+            "name": "Interesting Path Discovered: /manage",
+            "severity": "Low",
+            "url": "http://localhost:8081/manage",
+            "description": "A resource was found at /manage which may contain sensitive information or internal logic.",
+            "impact": "Information disclosure that assists in further reconnaissance.",
+            "steps_to_reproduce": "1. Request http://localhost:8081/manage.\n2. Inspect the content for internal details.",
+            "proof_of_concept": "Path http://localhost:8081/manage exists (HTTP 302)",
+            "recommendation": "Review the necessity of this path being public. If not required, disable access or require authentication.",
+            "technical_fix": "Options -Indexes in Apache or autoindex off in Nginx to prevent directory listing."
+        },
+        {
+            "name": "Interesting Path Discovered: /dashboard",
+            "severity": "Low",
+            "url": "http://localhost:8081/dashboard",
+            "description": "A resource was found at /dashboard which may contain sensitive information or internal logic.",
+            "impact": "Information disclosure that assists in further reconnaissance.",
+            "steps_to_reproduce": "1. Request http://localhost:8081/dashboard.\n2. Inspect the content for internal details.",
+            "proof_of_concept": "Path http://localhost:8081/dashboard exists (HTTP 302)",
+            "recommendation": "Review the necessity of this path being public. If not required, disable access or require authentication.",
+            "technical_fix": "Options -Indexes in Apache or autoindex off in Nginx to prevent directory listing."
+        },
+        {
+            "name": "Interesting Path Discovered: /server-status",
+            "severity": "Low",
+            "url": "http://localhost:8081/server-status",
+            "description": "A resource was found at /server-status which may contain sensitive information or internal logic.",
+            "impact": "Information disclosure that assists in further reconnaissance.",
+            "steps_to_reproduce": "1. Request http://localhost:8081/server-status.\n2. Inspect the content for internal details.",
+            "proof_of_concept": "Path http://localhost:8081/server-status exists (HTTP 302)",
+            "recommendation": "Review the necessity of this path being public. If not required, disable access or require authentication.",
+            "technical_fix": "Options -Indexes in Apache or autoindex off in Nginx to prevent directory listing."
+        }
+    ]
+}
